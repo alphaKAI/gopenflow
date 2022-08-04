@@ -73,6 +73,9 @@ type PacketIn struct {
 	// Length is the total length of the frame.
 	Length uint16
 
+	// Port
+	Port uint16
+
 	// Reason is the reason why packet is being sent.
 	Reason PacketInReason
 
@@ -113,7 +116,7 @@ func (p *PacketIn) ReadFrom(r io.Reader) (int64, error) {
 	// Read the Packet-In header, list of match rules
 	// that used to match the processing packet,
 	// then the original frame, if any.
-	n, err := encoding.ReadFrom(r, &p.Buffer, &p.Length,
+	n, err := encoding.ReadFrom(r, &p.Buffer, &p.Length, &p.Port,
 		&p.Reason, &p.Table, &p.Cookie, &p.Match, &defaultPad2)
 	if err != nil {
 		return n, err
