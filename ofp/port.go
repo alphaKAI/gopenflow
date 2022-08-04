@@ -5,7 +5,7 @@ import (
 	"net"
 	"strings"
 
-	"github.com/netrack/openflow/internal/encoding"
+	"github.com/alphakai/gopenflow/internal/encoding"
 )
 
 // PortFeature defines the features of port available in datapath.

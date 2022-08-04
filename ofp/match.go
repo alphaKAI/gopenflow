@@ -6,7 +6,7 @@ import (
 	"io"
 	"io/ioutil"
 
-	"github.com/netrack/openflow/internal/encoding"
+	"github.com/alphakai/gopenflow/internal/encoding"
 )
 
 // XMType defines the flow match field types for OpenFlow basic class.

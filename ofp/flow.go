@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"io"
 
-	"github.com/netrack/openflow/internal/encoding"
+	"github.com/alphakai/gopenflow/internal/encoding"
 )
 
 // FlowModCommand represents a type of the flow table modification

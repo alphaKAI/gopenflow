@@ -5,7 +5,7 @@ import (
 	"io"
 	"testing"
 
-	"github.com/netrack/openflow/internal/encoding"
+	"github.com/alphakai/gopenflow/internal/encoding"
 )
 
 // fakeCookieJar implements the CookieJar interface.

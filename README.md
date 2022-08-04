@@ -1,7 +1,7 @@
 # openflow - The OpenFlow protocol library
 
-[![Build Status][BuildStatus]](https://travis-ci.org/netrack/openflow)
-[![Documentation][Documentation]](https://godoc.org/github.com/netrack/openflow)
+[![Build Status][BuildStatus]](https://travis-ci.org/alphakai/gopenflow)
+[![Documentation][Documentation]](https://godoc.org/github.com/alphakai/gopenflow)
 
 The openflow library is a pure Go implementation of the OpenFlow protocol.
 The ideas of the programming interface mostly borrowed from the Go standard
@@ -10,7 +10,7 @@ HTTP library.
 # Installation
 
 ```bash
-$ go get github.com/netrack/openflow
+$ go get github.com/alphakai/gopenflow
 ```
 
 # Usage
@@ -22,7 +22,7 @@ we are using message types.
 package main
 
 import (
-    of "github.com/netrack/openflow"
+    of "github.com/alphakai/gopenflow"
 )
 
 func main() {
@@ -41,8 +41,8 @@ func main() {
 package main
 
 import (
-    "github.com/netrack/openflow/ofp"
-    of "github.com/netrack/openflow"
+    "github.com/alphakai/gopenflow/ofp"
+    of "github.com/alphakai/gopenflow"
 )
 
 func main() {
@@ -76,5 +76,5 @@ to do with code whatever you want. See the [LICENSE](LICENSE) file for full
 license text.
 
 
-[BuildStatus]:   https://travis-ci.org/netrack/openflow.svg?branch=master
-[Documentation]: https://godoc.org/github.com/netrack/openflow?status.svg
+[BuildStatus]:   https://travis-ci.org/alphakai/gopenflow.svg?branch=master
+[Documentation]: https://godoc.org/github.com/alphakai/gopenflow?status.svg

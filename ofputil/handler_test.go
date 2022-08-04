@@ -3,9 +3,9 @@ package ofputil
 import (
 	"testing"
 
-	of "github.com/netrack/openflow"
-	"github.com/netrack/openflow/ofp"
-	"github.com/netrack/openflow/ofptest"
+	of "github.com/alphakai/gopenflow"
+	"github.com/alphakai/gopenflow/ofp"
+	"github.com/alphakai/gopenflow/ofptest"
 )
 
 func TestEchoHandler(t *testing.T) {

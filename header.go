@@ -5,7 +5,7 @@ import (
 	"io"
 	"math/rand"
 
-	"github.com/netrack/openflow/internal/encoding"
+	"github.com/alphakai/gopenflow/internal/encoding"
 )
 
 const (

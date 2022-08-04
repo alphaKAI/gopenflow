@@ -4,7 +4,7 @@ import (
 	"encoding/gob"
 	"testing"
 
-	"github.com/netrack/openflow/internal/encodingtest"
+	"github.com/alphakai/gopenflow/internal/encodingtest"
 )
 
 func TestBucket(t *testing.T) {

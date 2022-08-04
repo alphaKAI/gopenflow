@@ -3,7 +3,7 @@ package ofputil
 import (
 	"testing"
 
-	"github.com/netrack/openflow/ofp"
+	"github.com/alphakai/gopenflow/ofp"
 )
 
 func TestBitmap64(t *testing.T) {

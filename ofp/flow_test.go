@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/netrack/openflow/internal/encodingtest"
+	"github.com/alphakai/gopenflow/internal/encodingtest"
 )
 
 func TestFlowMod(t *testing.T) {

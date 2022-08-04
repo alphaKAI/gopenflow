@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/netrack/openflow/internal/encoding"
+	"github.com/alphakai/gopenflow/internal/encoding"
 )
 
 // HelloElemType defines the type of optional hello elements

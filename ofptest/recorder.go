@@ -3,7 +3,7 @@ package ofptest
 import (
 	"io"
 
-	of "github.com/netrack/openflow"
+	of "github.com/alphakai/gopenflow"
 )
 
 // ResponseRecorder is an implementation of http.ResponseWriter that

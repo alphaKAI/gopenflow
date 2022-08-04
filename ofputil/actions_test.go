@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/netrack/openflow/ofp"
+	"github.com/alphakai/gopenflow/ofp"
 )
 
 func TestActionsApply(t *testing.T) {

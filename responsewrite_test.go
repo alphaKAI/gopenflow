@@ -9,10 +9,10 @@ import (
 	"testing"
 	"time"
 
-	of "github.com/netrack/openflow"
-	"github.com/netrack/openflow/ofp"
-	"github.com/netrack/openflow/ofptest"
-	"github.com/netrack/openflow/ofputil"
+	of "github.com/alphakai/gopenflow"
+	"github.com/alphakai/gopenflow/ofp"
+	"github.com/alphakai/gopenflow/ofptest"
+	"github.com/alphakai/gopenflow/ofputil"
 )
 
 func waitAll(ch chan struct{}, n int, t time.Duration) error {

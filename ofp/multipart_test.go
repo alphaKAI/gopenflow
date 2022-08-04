@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/netrack/openflow/internal/encodingtest"
+	"github.com/alphakai/gopenflow/internal/encodingtest"
 )
 
 func TestMultipartRequest(t *testing.T) {

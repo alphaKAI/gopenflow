@@ -3,7 +3,7 @@ package ofp
 import (
 	"testing"
 
-	"github.com/netrack/openflow/internal/encodingtest"
+	"github.com/alphakai/gopenflow/internal/encodingtest"
 )
 
 func TestActionCopyTTLInOut(t *testing.T) {
