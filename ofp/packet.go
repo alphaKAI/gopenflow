@@ -46,6 +46,38 @@ var packetInReasonText = map[PacketInReason]string{
 	PacketInReasonInvalidTTL: "PacketInReasonInvalidTTL",
 }
 
+const (
+	EthTypIP = 0x0800
+	EthTypArp = 0x0806
+	EthTypVLAN = 0x8100)
+
+type Packet struct {
+    DlSrc uint64
+    DlDst uint64
+		EthType uint16
+    DlVlan uint16
+    DlVlanDei bool
+    DlVlanPcp uint8
+		Data []byte
+}
+
+func (p *Packet) ReadFrom(r io.Reader) (int64, error) {
+	// Read the Packet-In header, list of match rules
+	// that used to match the processing packet,
+	// then the original frame, if any.
+	n, err := encoding.ReadFrom(r, &p.DlSrc, &p.DlDst, &p.EthType, &p.DlVlan,
+		&p.DlVlanDei, &p.DlVlanPcp)
+	if err != nil {
+		return n, err
+	}
+	p.Data, err = ioutil.ReadAll(r)
+	if err != nil {
+		return n + int64(len(p.Data)), err
+	}
+
+	return n + int64(len(p.Data)), nil
+}
+
 // PacketIn used by the datapath to sent the processing packet to
 // controller.
 //
